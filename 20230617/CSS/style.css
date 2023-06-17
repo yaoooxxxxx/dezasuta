@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 0 20px;
+    background: gray;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.wrap div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 300px;
+    margin-bottom: 20px;
+    background: orange;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        display: block;
+    }
+}
