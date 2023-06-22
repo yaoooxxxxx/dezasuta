@@ -48,7 +48,7 @@ img {
 .wrap_01 {
     display: flex;
     justify-content: space-between;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto 50px;
 }
 
@@ -67,7 +67,7 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -86,12 +86,11 @@ img {
 .flex_header {
     display: flex;
     justify-content: space-between;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 .flex_list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .flex_list li {
@@ -108,6 +107,7 @@ img {
         display: block;
         padding: 20px;
         width: 100%;
+        box-sizing: border-box;
     }
     h1 {
         margin-bottom: 20px;
