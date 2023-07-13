@@ -23,6 +23,7 @@ li {
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
         "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
 }
 h1,
 h2,
@@ -67,10 +68,8 @@ img {
     width: 100%;
     padding: 10px 7% 0 3%;
     box-sizing: border-box;
-    /* paddingはpxで指定しても問題ないが、
-    %にすることで横幅に応じて適応される
-    高さに%は使わないことが多い
-    高さは画面幅によって影響が出ることはあまり無い
+    /* paddingはpxで指定しても問題ないが、%にすることで横幅に応じて適応される
+    高さに%は使わないことが多い。高さは画面幅によって影響が出ることはあまり無い
     横は%でも良いが、縦はpxで固定にする方が多い（絶対ではない） */
 
     /*  Q1. 7%と3％はどうやって計算する？目視？計算式？
@@ -106,6 +105,7 @@ GALLERY
 矢印は別途授業でするので一旦保留でOK
 */
 
+/* ↓ここから課題続き↓ */
 /*FLEX*/
 .flex_content {
     display: flex;
@@ -116,9 +116,6 @@ GALLERY
 .flex_justify {
     justify-content: space-between;
 }
-
-/* ↓ここから課題続き↓ */
-
 /* common */
 body {
     width: 100%;
@@ -135,6 +132,8 @@ body {
 .wrap {
     width: 1000px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .pt100 {
     padding-top: 100px;
@@ -159,7 +158,6 @@ body {
     text-align: center;
 }
 
-/* ABOUT US,MENU,GALLERY,EVENTのタイトルの大きさはどのように決めれば良いのか？ */
 .section_title {
     margin-bottom: 40px;
     text-align: center;
@@ -167,7 +165,12 @@ body {
 .section_title img {
     width: 20%;
 }
-/* heading */
+
+/* 質問ーーーーーーーーーーーーーーーー
+ABOUT US,MENU,GALLERY,EVENTのタイトルの大きさはどのように決めれば良いのか？
+ーーーーーーーーーーーーーーーー */
+
+/* ーーーーーheading leadーーーーー */
 #heading .lead {
     font-size: 30px;
 }
@@ -177,12 +180,13 @@ body {
 #heading .text {
     font-size: 23px;
     line-height: 1.7;
+    letter-spacing: 0.1em;
 }
 .heading_img {
     width: 75%;
 }
 
-/* about */
+/* ーーーーーaboutーーーーー */
 .about_img {
     border-radius: 0 0 82px;
     margin-right: 85px;
@@ -197,10 +201,9 @@ body {
     line-height: 1.6;
 }
 
-/* menu */
+/* ーーーーーmenuーーーーー */
 .menu_box {
     flex-basis: 30%;
-    /* position: relative; */
 }
 .menu_box img {
     border-radius: 0 41px 0 0;
@@ -208,9 +211,6 @@ body {
 .menu_box span {
     font-size: 38px;
     color: #d30202;
-    /* position: absolute; */
-    /* bottom: 0;
-    left: 0; */
     display: block;
     margin: -13px 0 25px 13px;
 }
@@ -218,7 +218,7 @@ body {
     line-height: 1.5;
 }
 
-/* gallery */
+/* ーーーーーgalleryーーーーー */
 #gallery {
     margin: 50px auto;
     min-width: 1000px;
@@ -228,7 +228,7 @@ body {
     display: block;
 }
 
-/* event */
+/* ーーーーーeventーーーーー */
 .event_box {
     border: 4px solid #4f260b;
     background-color: #fff;
