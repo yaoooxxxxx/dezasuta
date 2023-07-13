@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #4f260b;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* header */
+.header_wrap {
+    position: absolute;
+    /* position: absolute;を使うと横幅がなくなるという性質がある */
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 7% 0 3%;
+    box-sizing: border-box;
+    /* paddingはpxで指定しても問題ないが、
+    %にすることで横幅に応じて適応される
+    高さに%は使わないことが多い
+    高さは画面幅によって影響が出ることはあまり無い
+    横は%でも良いが、縦はpxで固定にする方が多い（絶対ではない） */
+
+    /*  Q1. 7%と3％はどうやって計算する？目視？計算式？
+        Q2. コンテンツ幅にヘッダーが収まっていた場合は、どうなる？*/
+}
+.header_logo {
+    width: 226px;
+}
+.pc_nav ul {
+    display: flex;
+}
+header {
+    min-width: 1000px;
+}
+/* コーディングはレイアウトを組んでいくという考えが大事
+細かいデザインよりも先にレイアウトを指定してあげる */
+
+.pc_nav ul li {
+    width: 105px;
+    margin-left: 55px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    text-align: center;
+}
+
+/* 補足 
+MENU
+・画像と文字が重なっているところはネガティブマージンを使う
+GALLERY
+矢印は別途授業でするので一旦保留でOK
+*/
+
+/*FLEX*/
+.flex_content {
+    display: flex;
+}
+.flex_wrap {
+    flex-wrap: wrap;
+}
+.flex_justify {
+    justify-content: space-between;
+}
+
+/* ↓ここから課題続き↓ */
+
+/* common */
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body {
+    background: #e8d9bf;
+}
+* {
+    box-sizing: border-box;
+}
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+.pt100 {
+    padding-top: 100px;
+}
+.pt50 {
+    padding-top: 50px;
+}
+.pb50 {
+    padding-bottom: 50px;
+}
+.ptb50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.mb50 {
+    margin-bottom: 50px;
+}
+.mb60 {
+    margin-bottom: 60px;
+}
+.center {
+    text-align: center;
+}
+
+/* ABOUT US,MENU,GALLERY,EVENTのタイトルの大きさはどのように決めれば良いのか？ */
+.section_title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.section_title img {
+    width: 20%;
+}
+/* heading */
+#heading .lead {
+    font-size: 30px;
+}
+.heading {
+    font-size: 82px;
+}
+#heading .text {
+    font-size: 23px;
+    line-height: 1.7;
+}
+.heading_img {
+    width: 75%;
+}
+
+/* about */
+.about_img {
+    border-radius: 0 0 82px;
+    margin-right: 85px;
+}
+.about_box {
+    align-self: center;
+}
+.about_box h3 {
+    font-size: 44px;
+}
+.about_box p {
+    line-height: 1.6;
+}
+
+/* menu */
+.menu_box {
+    flex-basis: 30%;
+    /* position: relative; */
+}
+.menu_box img {
+    border-radius: 0 41px 0 0;
+}
+.menu_box span {
+    font-size: 38px;
+    color: #d30202;
+    /* position: absolute; */
+    /* bottom: 0;
+    left: 0; */
+    display: block;
+    margin: -13px 0 25px 13px;
+}
+.menu_box p {
+    line-height: 1.5;
+}
+
+/* gallery */
+#gallery {
+    margin: 50px auto;
+    min-width: 1000px;
+}
+.gallery img {
+    width: 20%;
+    display: block;
+}
+
+/* event */
+.event_box {
+    border: 4px solid #4f260b;
+    background-color: #fff;
+    padding: 45px 150px;
+}
+.event_date {
+    margin-right: 55px;
+}
+.event_txt {
+    text-decoration: underline;
+}
+.event_list p {
+    line-height: 2;
+}

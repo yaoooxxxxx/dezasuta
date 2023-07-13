@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デザインカフェ</title>
+    <meta name="description" content="デザインカフェのサイトです。">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- コーディング3ステップ
+①どういう動きをするのかを考える
+②ぐちゃぐちゃのままでも骨組みをしていく
+③CSSを当てていく -->
+
+<body>
+    <!-- ナビゲーション
+タイトルとメニューがどうなっていくかを考える
+小さくなった時にどういうふうに動くか。 -->
+    <header>
+        <div class="header_slider">
+            <div><img src="images/pc_first-100.jpg" alt="店内の様子"></div>
+        </div>
+        <div class="header_wrap">
+            <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE"></h1>
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">EVENT</a></li>
+                    <li><a href="">ACCESS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="heading">
+            <div class="wrap pt100 pb50 center">
+                <p class="lead mb50">Have a happy day From a cup of coffee.</p>
+                <p class="heading mb50">ハッピーに溢れる1日を<br>
+                    1杯のコーヒーから。</p>
+                <p class="text">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+                    足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section id="about">
+            <div class="wrap ptb50 flex_content flex_justify">
+                <img src="images/pc_about-100.jpg" alt="カフェで提供されたラテアート" class="about_img">
+                <div class="about_box">
+                    <h2 class="heading_img mb60">
+                        <img src="images/about_us@2x.png" alt="about us">
+                    </h2>
+                    <h3 class="heading mb60">私たちが提供する<br>
+                        こだわりのコーヒー</h3>
+                    <p>サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section id="menu">
+            <div class="wrap ptb50">
+                <h2 class="section_title"><img src="images/menu@2x.png" alt="about us"></h2>
+                <div class="flex_content flex_justify">
+                    <div class="menu_box">
+                        <img src="images/pc_menu_drink-100.jpg" alt="カフェオレ">
+                        <span>Drink</span>
+                        <p>
+                            ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+                        </p>
+                    </div>
+                    <div class="menu_box">
+                        <img src="images/pc_menu_food-100.jpg" alt="パスタ">
+                        <span>Food</span>
+                        <p>
+                            フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+                        </p>
+                    </div>
+                    <div class="menu_box">
+                        <img src="images/pc_menu_sweets-100.jpg" alt="スイーツ">
+                        <span>Sweets</span>
+                        <p>
+                            スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery">
+            <h2 class="section_title"><img src="images/gallery@2x.png" alt="gallery"></h2>
+            <div class="gallery flex_content">
+                <img src="images/pc_gallary_01-100.jpg" alt="ラテアート">
+                <img src="images/pc_gallary_02-100.jpg" alt="カフェの看板">
+                <img src="images/pc_gallary_03-100.jpg" alt="カフェの店内">
+                <img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆">
+                <img src="images/pc_gallary_05-100.jpg" alt="カフェを利用する人々">
+            </div>
+        </section>
+
+        <!-- EVENT -->
+        <section id="event">
+            <div class="wrap ptb50">
+                <h2 class="section_title"><img src="images/event@2x.png" alt="event"></h2>
+                <div class="event_box">
+                    <ul>
+                        <li class="flex_content event_list">
+                            <p class="event_date">2020.06.23</p>
+                            <p class="event_txt">7月はイベント出店のため0/0お休みします</p>
+                        </li>
+                        <li class="flex_content event_list">
+                            <p class="event_date">2020.03.15</p>
+                            <p class="event_txt">春の新商品新発売。話題のあのブランドとコラボ</p>
+                        </li>
+                        <li class="flex_content event_list">
+                            <p class="event_date">2020.02.06</p>
+                            <p class="event_txt">コーヒーの日で30％OFFイベントを開催［3日間限定］</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- access -->
+        <section class="access">
+            <h2 class="section_title"><img src="images/access@2x.png" alt="access"></h2>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13120.929570030898!2d135.547632!3d34.699318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0e6b8b574b3%3A0xddae2a41d5b6a599!2z44GC44KK44GM44Go44GG44Gf44GT54S8!5e0!3m2!1sja!2sjp!4v1689126693815!5m2!1sja!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <img src="images/design_cafe_logo_footer@2x.png" alt="DESIGN CAFE">
+                <ul>
+                    <li>OPEN 18:00 / CLOSE 24:00</li>
+                    <li>〒150-0022</li>
+                    <li>東京都渋谷区東京南123デザインビルB1</li>
+                    <li>MAIL：info@designcafe.tokyo</li>
+                </ul>
+            </div>
+            <p>© 2021 DESIGN CAFE</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
