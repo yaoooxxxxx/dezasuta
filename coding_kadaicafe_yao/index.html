@@ -18,7 +18,7 @@
     <!-- ナビゲーション
 タイトルとメニューがどうなっていくかを考える
 小さくなった時にどういうふうに動くか。 -->
-    <header>
+    <header id="header">
         <div class="header_slider">
             <div><img src="images/pc_first-100.jpg" alt="店内の様子"></div>
         </div>
@@ -37,15 +37,15 @@
     </header>
 
     <main>
-        <section id="heading">
+        <div id="lead">
             <div class="wrap pt100 pb50 center">
-                <p class="lead mb50">Have a happy day From a cup of coffee.</p>
+                <p class="lead_head mb50">Have a happy day From a cup of coffee.</p>
                 <p class="heading mb50">ハッピーに溢れる1日を<br>
                     1杯のコーヒーから。</p>
                 <p class="text">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
                     足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
             </div>
-        </section>
+        </div>
 
         <!-- ABOUT US -->
         <section id="about">
@@ -131,29 +131,33 @@
         <!-- access -->
         <section id="access">
             <h2 class="section_title"><img src="images/access@2x.png" alt="access"></h2>
-            <div>
+            <div class="map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13120.929570030898!2d135.547632!3d34.699318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0e6b8b574b3%3A0xddae2a41d5b6a599!2z44GC44KK44GM44Go44GG44Gf44GT54S8!5e0!3m2!1sja!2sjp!4v1689126693815!5m2!1sja!2sjp"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51862.54740680111!2d139.65141630858454!3d35.666924715431385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cb2eb3108d1%3A0xf11cd9b2395b6677!2z5p2x5Lqs6YO95riL6LC35Yy6!5e0!3m2!1sja!2sjp!4v1689226361024!5m2!1sja!2sjp"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <div>
-                <img src="images/design_cafe_logo_footer@2x.png" alt="DESIGN CAFE">
-                <ul>
+    <footer id="footer">
+        <div class="wrap">
+            <div class="flex_content footer_contents">
+                <div class="footer_logo">
+                    <img src="images/design_cafe_logo_footer@2x.png" alt="DESIGN CAFE">
+                </div>
+                <ul class="footerlist">
                     <li>OPEN 18:00 / CLOSE 24:00</li>
                     <li>〒150-0022</li>
                     <li>東京都渋谷区東京南123デザインビルB1</li>
                     <li>MAIL：info@designcafe.tokyo</li>
                 </ul>
             </div>
-            <p>© 2021 DESIGN CAFE</p>
+            <p class="copy">© 2021 DESIGN CAFE</p>
         </div>
     </footer>
-
+    <div class="pagetop">
+        <a href="#header"><img src="images/to_top@2x.png" alt="topへ戻る"></a>
+    </div>
 
 </body>
 
