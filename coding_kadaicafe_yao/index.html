@@ -7,6 +7,7 @@
     <title>デザインカフェ</title>
     <meta name="description" content="デザインカフェのサイトです。">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
 <!-- コーディング3ステップ
@@ -33,6 +34,16 @@
                     <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -50,14 +61,16 @@
         <!-- ABOUT US -->
         <section id="about">
             <div class="wrap ptb50 flex_content flex_justify">
-                <img src="images/pc_about-100.jpg" alt="カフェで提供されたラテアート" class="about_img">
-                <div class="about_box">
-                    <h2 class="heading_img mb50">
+                <div class="about_img">
+                    <img src="images/pc_about-100.jpg" alt="カフェで提供されたラテアート">
+                </div>
+                <div class="about_txtbox">
+                    <h2 class="section_title">
                         <img src="images/about_us@2x.png" alt="about us">
                     </h2>
-                    <h3 class="heading mb50">私たちが提供する<br>
-                        こだわりのコーヒー</h3>
-                    <p>サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                    <p class="about_txtbox-head">私たちが提供する<br>こだわりのコーヒー</p>
+                    <p class="about_txtbox-p">
+                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
                     </p>
                 </div>
             </div>
@@ -66,36 +79,36 @@
         <!-- MENU -->
         <section id="menu">
             <div class="wrap ptb50">
-                <h2 class="section_title"><img src="images/menu@2x.png" alt="about us"></h2>
-                <div class="flex_content flex_justify">
-                    <div class="menu_box">
+                <h2 class="section_title center"><img src="images/menu@2x.png" alt="about us"></h2>
+                <ul class="flex_content flex_justify">
+                    <li class="menu_box">
                         <img src="images/pc_menu_drink-100.jpg" alt="カフェオレ">
                         <span>Drink</span>
                         <p>
                             ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
                         </p>
-                    </div>
-                    <div class="menu_box">
+                    </li>
+                    <li class="menu_box">
                         <img src="images/pc_menu_food-100.jpg" alt="パスタ">
                         <span>Food</span>
                         <p>
                             フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
                         </p>
-                    </div>
-                    <div class="menu_box">
+                    </li>
+                    <li class="menu_box">
                         <img src="images/pc_menu_sweets-100.jpg" alt="スイーツ">
                         <span>Sweets</span>
                         <p>
                             スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
                         </p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <!-- GALLERY -->
         <section id="gallery">
-            <h2 class="section_title"><img src="images/gallery@2x.png" alt="gallery"></h2>
+            <h2 class="section_title center"><img src="images/gallery@2x.png" alt="gallery"></h2>
             <div class="gallery flex_content">
                 <img src="images/pc_gallary_01-100.jpg" alt="ラテアート">
                 <img src="images/pc_gallary_02-100.jpg" alt="カフェの看板">
@@ -108,20 +121,20 @@
         <!-- EVENT -->
         <section id="event">
             <div class="wrap ptb50">
-                <h2 class="section_title"><img src="images/event@2x.png" alt="event"></h2>
-                <div class="event_box">
+                <h2 class="section_title center"><img src="images/event@2x.png" alt="event"></h2>
+                <div class="event_box flex_content flex_center">
                     <ul>
-                        <li class="flex_content event_list">
-                            <p class="event_date">2020.06.23</p>
-                            <p class="event_txt">7月はイベント出店のため0/0お休みします</p>
+                        <li class="event_list flex_content flex_middle">
+                            <time datetime="2020-06-23">2020.06.23</time>
+                            <a href="#" class="event_txt">7月はイベント出店のため0/0お休みします</a>
                         </li>
-                        <li class="flex_content event_list">
-                            <p class="event_date">2020.03.15</p>
-                            <p class="event_txt">春の新商品新発売。話題のあのブランドとコラボ</p>
+                        <li class="event_list flex_content flex_middle">
+                            <time datetime="2020-06-23">2020.03.15</time>
+                            <a href="#" class="event_txt">春の新商品新発売。話題のあのブランドとコラボ</a>
                         </li>
-                        <li class="flex_content event_list">
-                            <p class="event_date">2020.02.06</p>
-                            <p class="event_txt">コーヒーの日で30％OFFイベントを開催［3日間限定］</p>
+                        <li class="event_list flex_content flex_middle">
+                            <time datetime="2020-06-23">2020.02.06</time>
+                            <a href="#" class="event_txt">コーヒーの日で30％OFFイベントを開催［3日間限定］</a>
                         </li>
                     </ul>
                 </div>
@@ -130,7 +143,7 @@
 
         <!-- access -->
         <section id="access">
-            <h2 class="section_title"><img src="images/access@2x.png" alt="access"></h2>
+            <h2 class="section_title center"><img src="images/access@2x.png" alt="access"></h2>
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51862.54740680111!2d139.65141630858454!3d35.666924715431385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cb2eb3108d1%3A0xf11cd9b2395b6677!2z5p2x5Lqs6YO95riL6LC35Yy6!5e0!3m2!1sja!2sjp!4v1689226361024!5m2!1sja!2sjp"
@@ -152,13 +165,23 @@
                     <li>MAIL：info@designcafe.tokyo</li>
                 </ul>
             </div>
-            <p class="copy">© 2021 DESIGN CAFE</p>
+            <p class="copy center">© 2021 DESIGN CAFE</p>
         </div>
     </footer>
     <div class="pagetop">
         <a href="#header"><img src="images/to_top@2x.png" alt="topへ戻る"></a>
     </div>
 
+    <script>
+        // $(function () {});　は、全てのhtnlを読み込んだらという意味
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+        });
+    </script>
 </body>
 
 </html>

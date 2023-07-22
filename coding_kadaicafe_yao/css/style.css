@@ -40,16 +40,13 @@ a {
     color: inherit;
     transition: 0.3s;
 }
-
 a:hover {
     opacity: 0.5;
 }
-
 ul {
     /*左の「・」を消す*/
     list-style: none;
 }
-
 img {
     max-width: 100%;
     vertical-align: bottom;
@@ -71,9 +68,6 @@ img {
     /* paddingはpxで指定しても問題ないが、%にすることで横幅に応じて適応される
     高さに%は使わないことが多い。高さは画面幅によって影響が出ることはあまり無い
     横は%でも良いが、縦はpxで固定にする方が多い（絶対ではない） */
-
-    /*  Q1. 7%と3％はどうやって計算する？目視？計算式？
-        Q2. コンテンツ幅にヘッダーが収まっていた場合は、どうなる？*/
 }
 .header_logo {
     width: 226px;
@@ -81,21 +75,144 @@ img {
 .pc_nav ul {
     display: flex;
 }
-header {
-    min-width: 1000px;
-}
 /* コーディングはレイアウトを組んでいくという考えが大事
 細かいデザインよりも先にレイアウトを指定してあげる */
-
 .pc_nav ul li {
     width: 105px;
     margin-left: 55px;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
+    font-size: 18px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
         "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-    text-align: center;
+}
+.pc_nav ul li + li {
+    margin-left: 55px;
+}
+.header_slider img {
+    width: 100%;
+}
+/* スマホ版メニューは非表示 */
+.sp_nav,
+.sp_bnt {
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+    .pc_nav {
+        display: none;
+    }
+    /* ハンバーガー */
+    .sp_btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        height: 23px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .sp_btn span {
+        display: block;
+        position: relative;
+        top: 10px;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        transition: 0.3s;
+    }
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        transition: 0.3s;
+    }
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    /* ハンバーガー閉じる */
+    .sp_btn.open span {
+        background: transparent;
+    }
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    /* ハンバーガーメニュー */
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+    }
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .sp_nav ul li {
+        padding: 20px 0;
+        color: #fff;
+        font-size: 18px;
+        font-size: 18px;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+            "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    }
+
+    /* * ハンバーガーメニュー */
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* デバイスの高さ100% */
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .sp_nav ul li {
+        padding: 20px 0;
+        color: #fff;
+        font-size: 18px;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+            "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    }
+}
+
+.pc_only {
+}
+.sp_only {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .pc_only {
+        display: ;
+    }
 }
 
 /* 補足 
@@ -106,7 +223,7 @@ GALLERY
 */
 
 /* ↓ここから課題続き↓ */
-/*FLEX*/
+/* ーーーーーFLEXーーーーー */
 .flex_content {
     display: flex;
 }
@@ -116,7 +233,13 @@ GALLERY
 .flex_justify {
     justify-content: space-between;
 }
-/* common */
+.flex_center {
+    justify-content: center;
+}
+.flex_middle {
+    align-items: center;
+}
+/* ーーーーーcommonーーーーー */
 body {
     width: 100%;
     margin: 0;
@@ -138,9 +261,6 @@ body {
 .pt100 {
     padding-top: 100px;
 }
-.pt50 {
-    padding-top: 50px;
-}
 .pb50 {
     padding-bottom: 50px;
 }
@@ -148,56 +268,55 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.mb50 {
-    margin-bottom: 50px;
-}
-.mb60 {
-    margin-bottom: 60px;
-}
 .center {
     text-align: center;
 }
-
 .section_title {
     margin-bottom: 40px;
-    text-align: center;
+    height: 78px;
 }
 .section_title img {
-    width: 20%;
+    height: 100%;
 }
 
 /* 質問ーーーーーーーーーーーーーーーー
 ABOUT US,MENU,GALLERY,EVENTのタイトルの大きさはどのように決めれば良いのか？
+→heightにpxで固定値をつけてあげる
 ーーーーーーーーーーーーーーーー */
 
 /* ーーーーーheading leadーーーーー */
 #lead .lead_head {
     font-size: 30px;
 }
-.heading {
+#lead .heading {
     font-size: 82px;
+    letter-spacing: 0.1em;
+    line-height: 1.1;
+    margin-bottom: 25px;
 }
-#heading .text {
+#lead .text {
     font-size: 23px;
     line-height: 1.7;
     letter-spacing: 0.1em;
 }
-.heading_img {
-    width: 75%;
-}
 
 /* ーーーーーaboutーーーーー */
 .about_img {
+    flex-basis: 50%;
+}
+.about_img img {
     border-radius: 0 0 82px;
-    margin-right: 85px;
 }
-.about_box {
+.about_txtbox {
     align-self: center;
+    flex-basis: 41%;
 }
-.about_box h3 {
+.about_txtbox-head {
     font-size: 44px;
+    line-height: 1.4;
+    margin-bottom: 25px;
 }
-.about_box p {
+.about_txtbox-p {
     line-height: 1.6;
 }
 
@@ -212,7 +331,7 @@ ABOUT US,MENU,GALLERY,EVENTのタイトルの大きさはどのように決め�
     font-size: 38px;
     color: #d30202;
     display: block;
-    margin: -13px 0 25px 13px;
+    margin: -13px 0 10px 13px;
 }
 .menu_box p {
     line-height: 1.5;
@@ -221,7 +340,6 @@ ABOUT US,MENU,GALLERY,EVENTのタイトルの大きさはどのように決め�
 /* ーーーーーgalleryーーーーー */
 #gallery {
     margin: 50px auto;
-    min-width: 1000px;
 }
 .gallery img {
     width: 20%;
@@ -232,54 +350,55 @@ ABOUT US,MENU,GALLERY,EVENTのタイトルの大きさはどのように決め�
 .event_box {
     border: 4px solid #4f260b;
     background-color: #fff;
-    padding: 45px 150px;
+    padding: 30px;
+}
+.event_list {
+    font-size: 23px;
 }
 .event_date {
     margin-right: 55px;
 }
 .event_txt {
     text-decoration: underline;
-}
-.event_list p {
     line-height: 2;
+}
+.event_list time {
+    margin-right: 50px;
 }
 
 /* ーーーーーaccessーーーーー */
 #access {
-    margin: 50px auto;
-    min-width: 1000px;
+    margin: 50px auto 0;
 }
-.map {
+.map iframe {
+    display: block;
     width: 100%;
     height: 470px;
 }
-.map iframe {
-    width: 100%;
-    height: auto;
-}
-/* ーーーーーpagetopーーーーー */
+
+/* ーーーーーpage topーーーーー */
 .pagetop {
     position: fixed;
     right: 40px;
     bottom: 40px;
     width: 125px;
 }
-/* footer */
+
+/* ーーーーーfooterーーーーー */
 #footer {
-    height: 395px;
     background: #fff;
+    padding: 75px;
 }
 .footer_logo {
     width: 227px;
     margin-right: 64px;
 }
-.footer_contents {
-    padding: 75px;
-}
 .footerlist li {
     line-height: 1.9;
     font-size: 20px;
+    color: #000;
 }
 .copy {
-    text-align: center;
+    color: #000;
+    margin-top: 75px;
 }
