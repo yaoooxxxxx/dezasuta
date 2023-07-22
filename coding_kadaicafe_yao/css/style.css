@@ -95,7 +95,7 @@ img {
 }
 /* スマホ版メニューは非表示 */
 .sp_nav,
-.sp_bnt {
+.sp_btn {
     display: none;
 }
 @media screen and (max-width: 1100px) {
@@ -205,13 +205,17 @@ img {
 }
 
 .pc_only {
+    display: block;
 }
 .sp_only {
     display: none;
 }
 @media screen and (max-width: 767px) {
+    .sp_only {
+        display: block;
+    }
     .pc_only {
-        display: ;
+        display: none;
     }
 }
 
@@ -268,6 +272,9 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.mb50 {
+    margin-bottom: 50px;
+}
 .center {
     text-align: center;
 }
@@ -287,6 +294,7 @@ ABOUT US,MENU,GALLERY,EVENTのタイトルの大きさはどのように決め�
 /* ーーーーーheading leadーーーーー */
 #lead .lead_head {
     font-size: 30px;
+    margin-bottom: 25px;
 }
 #lead .heading {
     font-size: 82px;
@@ -401,4 +409,71 @@ ABOUT US,MENU,GALLERY,EVENTのタイトルの大きさはどのように決め�
 .copy {
     color: #000;
     margin-top: 75px;
+}
+
+@media screen and (max-width: 767px) {
+    .section_title {
+        margin-bottom: 20px;
+        height: 45px;
+    }
+    .lead-area {
+        padding: 40px 0;
+    }
+    #lead .lead_head {
+        font-size: 17px;
+    }
+    #lead .heading {
+        font-size: 38px;
+        letter-spacing: -0.02em;
+    }
+    .section_title {
+    }
+    #lead .text {
+        font-size: 16px;
+    }
+    #about .wrap {
+        display: block;
+        padding: 30px 10px;
+    }
+    .about_txtbox .section_title {
+        text-align: center;
+    }
+    .menu_box-img img {
+        width: 100%;
+    }
+    .about_img-sp {
+        margin: 0 calc(50% - 50vw) 35px;
+        width: 100vw;
+    }
+    .about_txtbox-head {
+        font-size: 36px;
+        line-height: 1.25;
+    }
+    #menu .wrap {
+        padding: 30px 10px;
+    }
+    #menu .wrap ul {
+        display: block;
+    }
+    .menu_box {
+        margin-bottom: 60px;
+    }
+    .menu_box span {
+        font-size: 40px;
+    }
+    .menu_box p {
+        font-size: 17px;
+    }
+}
+
+/* スライダー調整 */
+.slick-dots {
+    bottom: 20px;
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
 }
