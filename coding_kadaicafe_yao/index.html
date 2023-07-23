@@ -40,11 +40,6 @@
                 </picture>
             </div>
         </div>
-
-
-
-
-
         <div class="header_wrap">
             <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE"></h1>
             <nav class="pc_nav">
@@ -185,7 +180,7 @@
     </main>
     <footer id="footer">
         <div class="wrap">
-            <div class="flex_content footer_contents">
+            <div class="footer_wrap flex_content footer_contents">
                 <div class="footer_logo">
                     <img src="images/design_cafe_logo_footer@2x.png" alt="DESIGN CAFE">
                 </div>
@@ -212,7 +207,13 @@
                 $('.sp_btn').toggleClass('open');
             });
             $('.header_slider').slick({
-                // autoplay: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+            });
+            $('.gallery').slick({
+                autoplay: true,
                 autoplaySpeed: 2000,
                 dots: true,
                 arrows: false,

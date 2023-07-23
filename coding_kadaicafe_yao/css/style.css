@@ -449,14 +449,18 @@ ABOUT US,MENU,GALLERY,EVENTのタイトルの大きさはどのように決め�
         font-size: 36px;
         line-height: 1.25;
     }
-    #menu .wrap {
+    #menu .wrap,
+    #event .wrap {
         padding: 30px 10px;
+    }
+    .gallery img {
+        width: 100%;
     }
     #menu .wrap ul {
         display: block;
     }
     .menu_box {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
     .menu_box span {
         font-size: 40px;
@@ -464,8 +468,44 @@ ABOUT US,MENU,GALLERY,EVENTのタイトルの大きさはどのように決め�
     .menu_box p {
         font-size: 17px;
     }
+    .event_list {
+        font-size: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .event_txt {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 75vw;
+    }
+    .event_box ul li:last-child {
+        margin-bottom: 0;
+    }
+    #gallery,
+    #access {
+        margin: 0;
+    }
+    .map iframe {
+        height: 190px;
+    }
+    #footer {
+        padding: 30px 0;
+    }
+    .footerlist li {
+        font-size: 18px;
+    }
+    .footer_wrap {
+        flex-wrap: wrap;
+    }
+    .footer_logo {
+        margin-bottom: 15px;
+    }
+    .pagetop {
+        width: 100px;
+        right: 10px;
+    }
 }
-
 /* スライダー調整 */
 .slick-dots {
     bottom: 20px;
