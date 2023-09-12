@@ -141,6 +141,7 @@
                 <img src="images/pc_gallary_03-100.jpg" alt="カフェの店内">
                 <img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆">
                 <img src="images/pc_gallary_05-100.jpg" alt="カフェを利用する人々">
+                <img src="images/pc_gallary_05-100.jpg" alt="カフェを利用する人々">
             </div>
         </section>
 
@@ -215,8 +216,18 @@
             $('.gallery').slick({
                 autoplay: true,
                 autoplaySpeed: 2000,
+                slidesToShow: 5,
                 dots: true,
-                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    }
+                ]
             });
         });
     </script>
