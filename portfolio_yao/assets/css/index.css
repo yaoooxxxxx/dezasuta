@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* フォント */
+.works-inner h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(28px, 5.2rem, 36px);
+    font-weight: 700;
+}
+.works-inner h3 {
+    font-size: clamp(14px, 3.3rem, 18px);
+    font-weight: bold;
+}
+.works-inner p {
+    font-family: "Josefin Sans", sans-serif;
+}
+#index button a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(14px, 3rem, 16px);
+}
+.about-inner_name {
+    font-size: clamp(16px, 2.7rem, 20px);
+    font-weight: bold;
+}
+.mv-bg img {
+    width: 100%;
+}
+
+/* header */
+.header-inner {
+    padding: 80px 0;
+}
+.header-inner h1 {
+    width: 250px;
+}
+.header-inner ul {
+    gap: 4em;
+}
+.header-inner ul li {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(16px, 3.3rem, 18px);
+    font-weight: bold;
+}
+.header-inner ul li a:hover {
+    border-bottom: 2px solid #201213;
+}
+.header-logo a:hover {
+    opacity: 0.7;
+}
+/* MV */
+.mv-txt {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    z-index: 999;
+    width: 338px;
+    height: auto;
+    transform: translate(0, -50%);
+}
+.mv p {
+    font-size: 4rem;
+    line-height: 1.75;
+}
+/* Works */
+.works-inner_item:hover {
+    opacity: 0.7;
+}
+.works-inner button a {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #201213;
+    padding: 1.2em 5.3em;
+}
+i::before {
+    position: absolute;
+    top: calc(50% - 0.7em);
+    right: 3rem;
+    font-size: 80%;
+}
+/* About */
+.about-inner_txt button {
+    display: block;
+    width: 270px;
+    height: 52px;
+    border: 1px solid #201213;
+    text-align: center;
+}
+.about-inner {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 65px 105px;
+}
+.about-inner_img {
+    margin-right: 70px;
+}
+.about-inner_txt {
+    max-width: 464px;
+    flex: 1;
+}
+.about-inner_txt p {
+    margin-bottom: 2em;
+}
+
+/* hover */
+.works-inner button:hover {
+    border: none;
+    color: #fff;
+    background-color: var(--orange);
+}
+.about-inner button:hover {
+    border: none;
+    color: #fff;
+    background-color: var(--green);
+}
