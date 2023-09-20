@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+/* Googlefonts */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap");
 
 /* ーーーーーーーーーーーーリセットCSSーーーーーーーーーーーー */
@@ -436,9 +438,6 @@ th {
 
 /* ーーーーーーーーーーーー共通項目ここからーーーーーーーーーーーー */
 
-/* Googlefonts */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap");
-
 html {
     width: 100%;
     height: 100%;
@@ -469,7 +468,7 @@ body {
     position: relative;
     background-color: var(--gray);
 }
-/* フォント */
+/* ーーーーーーーー フォント ーーーーーーーー*/
 html {
     font-size: 0.4vw;
     scroll-behavior: smooth;
@@ -497,7 +496,6 @@ p {
 .en {
     font-family: "Josefin Sans", sans-serif;
 }
-
 .fade {
     transition: 0.2s ease-in-out;
 }
@@ -522,23 +520,15 @@ p {
     display: inline-block !important;
 }
 .full {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 .note {
     padding-left: 1em;
     text-indent: -1em;
 }
-.tel {
-    pointer-events: none;
-}
-@media screen and (max-width: 780px) {
-    .tel {
-        pointer-events: inherit;
-    }
-}
 
-/*FLEX*/
+/*ーーーーーーーー FLEX ーーーーーーーー*/
 .flex_content {
     display: flex;
 }
@@ -583,14 +573,15 @@ p {
     flex: 1;
 }
 
-/*POSITION*/
+/*ーーーーーーーー POSITION ーーーーーーーー*/
 .prelative {
     position: relative !important;
 }
 .pabsolute {
     position: absolute !important;
 }
-/*MARGIN*/
+
+/*ーーーーーーーー MARGIN ーーーーーーーー*/
 .mauto {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -730,9 +721,15 @@ p {
     padding: 20em !important;
 }
 
-/* オリジナル */
+/*ーーーーーーーー オリジナル ーーーーーーーー*/
+.mb50 {
+    margin-bottom: 50px;
+}
 .mb70 {
     margin-bottom: 70px;
+}
+.mb100 {
+    margin-bottom: 100px;
 }
 .mb150 {
     margin-bottom: 150px;
@@ -740,11 +737,14 @@ p {
 .mb200 {
     margin-bottom: 200px;
 }
+.pt100 {
+    padding-top: 100px;
+}
 .gap {
     gap: 10rem;
 }
 
-/* カラー */
+/*ーーーーーーーー カラー ーーーーーーーー*/
 :root {
     --gray: #f8f8f9;
     --orange: #fb7243;
@@ -752,7 +752,7 @@ p {
     --black: #201213;
 }
 
-/* レスポンシブ表示切り替え */
+/*ーーーーーーーー レスポンシブ表示切り替え ーーーーーーーー*/
 .pc_block {
     display: block;
 }
@@ -768,7 +768,7 @@ p {
     }
 }
 
-/* wrap */
+/*ーーーーーーーー wrap ーーーーーーーー*/
 .inner {
     /* width: calc(100% - 20rem); */
     max-width: 1100px;
@@ -778,8 +778,13 @@ p {
 .section {
     padding: 0 4%;
 }
+@media screen and (max-width: 580px) {
+    .section {
+        padding: 0 7%;
+    }
+}
 
-/* pagetp */
+/*ーーーーーーーー pagetop ーーーーーーーー*/
 .page-top a i::before {
     position: absolute;
     top: 50%;
@@ -797,7 +802,30 @@ p {
     height: 50px;
     background-color: #fff;
 }
-/* ーーーfooterーーー */
+
+/*ーーーーーーーー header ーーーーーーーー*/
+.header-inner {
+    padding: 80px 0;
+}
+.header-inner h1 {
+    width: 250px;
+}
+.header-inner ul {
+    gap: 4em;
+}
+.header-inner ul li {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(16px, 3.3rem, 18px);
+    font-weight: 700;
+}
+.header-inner ul li a:hover {
+    border-bottom: 2px solid #4c4c4c;
+}
+.header-logo a:hover {
+    opacity: 0.7;
+}
+
+/*ーーーーーーーー footer ーーーーーーーー*/
 .footer {
     background-color: var(--black);
 }
@@ -808,5 +836,9 @@ p {
     padding: 100px 0;
 }
 .footer-sns {
-    gap: 4em;
+    gap: 2rem;
+}
+.footer-sns a img {
+    width: 70%;
+    height: auto;
 }

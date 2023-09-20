@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>toricom design｜大阪のフリーランスデザイナー</title>
+    <title>works｜toricom design</title>
     <meta name="description"
         content="toricom design｜クライアント様と緊密な連携をし、縁の下で効果的に支える役割を果たします。デザインがシームレスにビジネス戦略に統合されるよう努力し、成功の一翼を担います。">
 
@@ -39,18 +39,19 @@
                 <a href="index.html"><img src="./assets/img/logo.png" alt="toricom design" class="full"></a>
             </h1>
             <ul class="header-inner_list flex_content flex_middle">
-                <li class="header-inner_listitem header-inner_listitem--work">
-                    <a href="/work.html">Works</a>
+                <li class="prelative header-inner_listitem header-inner_listitem--work">
+                    <a href="works.html">Works</a>
                 </li>
                 <li class="header-inner_listitem header-inner_listitem--about">
-                    <a href="/about.html">About</a>
+                    <a href="about.html">About</a>
                 </li>
                 <li class="header-inner_listitem header-inner_listitem--contact">
-                    <a href="/contact.html">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </header>
+    <!-- パンくずリスト -->
     <div class="section">
         <div class="inner breadcrumb-inner">
             <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -58,14 +59,13 @@
                     <a itemprop="item" href="index.html">
                         <span itemprop="name">TOP</span>
                     </a>
-                    <meta itemprop="position" content="1" />
+                    <meta itemprop="position" content="1">
                 </li>
-
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="en">
                     <a itemprop="item" href="works.html">
                         <span itemprop="name">Works</span>
                     </a>
-                    <meta itemprop="position" content="2" />
+                    <meta itemprop="position" content="2">
                 </li>
             </ol>
         </div>
@@ -73,7 +73,7 @@
     <main>
         <section class="section works mb150">
             <div class="inner works-inner">
-                <div class="flex_content flex_justify mb70 gap">
+                <div class="flex_content flex_justify mb70 gap works-inner_content">
                     <div class="works-inner_item">
                         <div class="mb2">
                             <a href="work1.html"><img src="./assets/img/work1.jpg" alt="美容室サイト" class="full"></a>
@@ -89,7 +89,7 @@
                         <p>Design</p>
                     </div>
                 </div>
-                <div class="flex_content flex_justify mb70 gap">
+                <div class="flex_content flex_justify mb70 gap works-inner_content">
                     <div class="works-inner_item">
                         <div class="mb2">
                             <a href="work3.html"><img src="./assets/img/work3.jpg" alt="キャンペーン告知バナー" class="full"></a>
@@ -105,7 +105,7 @@
                         <p>Design</p>
                     </div>
                 </div>
-                <div class="flex_content flex_justify mb70 gap">
+                <div class="flex_content flex_justify mb70 gap works-inner_content">
                     <div class="works-inner_item">
                         <div class="mb2">
                             <a href="work5.html"><img src="./assets/img/work5.jpg" alt="ハンバーガーショップバナー" class="full"></a>
@@ -126,27 +126,30 @@
         <!-- ーーーWorksここまでーーー -->
 
         <!-- ーーーaboutここからーーー -->
-        <section class="section about mb200">
+        <div class="section about mb200">
             <div class="inner about-inner">
-                <div class="flex_content flex_middle">
+                <div class="flex_content flex_middle about-inner_gap">
                     <div class="about-inner_img">
                         <img src="./assets/img/about.png" alt="toricom design" class="full">
                     </div>
                     <div class="about-inner_txt">
-                        <small class="mb1 en">Designer</small>
+                        <p class="mb1 en title">Designer</p>
                         <p class="mb3 about-inner_name">八尾　祥好</p>
                         <p>大阪生まれ大阪育ち。京都のデザイン会社に所属しながらフリーのWEBデザイナーとして活動中。</p>
                         <p>小さい頃から動物が好きで、現在も小動物カフェとデザイン会社
                             の掛け持ちをしながら個人でデザイン業をしています。</p>
                         <p>家には三毛猫2匹とフクロモモンガが居てます。
                             毎日かわいいです。</p>
-                        <button class="prelative">
-                            <a href="/about.html">View More About</a><i class="fa-solid fa-chevron-right"></i>
-                        </button>
+                        <div class="prelative btn">
+                            <div class="iblock btn-hover">
+                                <a href="/about.html" class="center">View More About</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- ーーーaboutここまでーーー -->
     </main>
 
@@ -155,7 +158,7 @@
             <a href="#" class="block"><i class="fa-solid fa-angle-up"></i></a>
         </div>
         <div class="footer-inner">
-            <div class="footer-sns flex_content flex_center mb2">
+            <div class="footer-sns flex_content flex_center mb2 gap">
                 <a href="https://www.instagram.com/yao.s_web/" target="_blank">
                     <img src="./assets/img/ig-ico.png" alt="Instagram">
                 </a>

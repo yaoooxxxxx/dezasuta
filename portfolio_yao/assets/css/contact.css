@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/*ーーーーーーーー フォント ーーーーーーーー*/
+.contact-head .inner span {
+    font-size: clamp(14px, 3rem, 18px);
+    font-weight: bold;
+}
+#contact h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(28px, 6rem, 36px);
+    font-weight: bold;
+}
+
+/*ーーーーーーーー header ーーーーーーーー*/
+.header-inner_listitem--contact:hover {
+    border-bottom: none;
+}
+.header-inner_listitem--contact::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #4c4c4c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*ーーーーーーーー パンくず ーーーーーーーー*/
+.breadcrumb-inner {
+    margin-bottom: 100px;
+}
+.breadcrumb li {
+    display: inline; /*横に並ぶように*/
+    font-weight: 600;
+}
+.breadcrumb li:after {
+    /* >を表示*/
+    content: ">";
+    padding: 0 3em;
+    color: #4c4c4c;
+    position: relative;
+    top: -2px;
+}
+.breadcrumb li:last-child:after {
+    content: "";
+}
+.breadcrumb li a:hover {
+    border-bottom: 1px solid #4c4c4c;
+}
+.breadcrumb li a {
+    font-size: clamp(12px, 2.7rem, 18px);
+}
+@media screen and (max-width: 580px) {
+    .breadcrumb-inner {
+        margin-bottom: 70px;
+    }
+}
+
+/*ーーーーーーーー メインビジュアルの幅 ーーーーーーーー*/
+#contact .mv-img {
+    width: 80vw;
+}
+
+/*ーーーーーーーー お問い合わせの説明 ーーーーーーーー*/
+.contact-head {
+    width: 80%;
+    margin: 0 auto 100px;
+}
+@media screen and (max-width: 580px) {
+    .contact-head,
+    #contact form {
+        width: 100% !important;
+    }
+    #contact .mv-img,
+    .contact-head,
+    #contact form {
+        margin-bottom: 70px !important;
+    }
+    .contact-head h2 {
+        margin-bottom: 40px;
+    }
+    #contact .btn {
+        margin-bottom: 150px;
+    }
+}
+
+/*ーーーーーーーー フォーム ーーーーーーーー*/
+#contact form {
+    width: 80%;
+    margin: 0 auto 100px;
+}
+#contact form dd {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#contact dt {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(18px, 4.3rem, 20px);
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.contact-name dd input,
+.contact-email dd input {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2em;
+    font-size: clamp(18px, 4.3rem, 20px);
+}
+.contact-message dd textarea {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2em;
+    font-size: clamp(18px, 4.3rem, 20px);
+}
+
+/*ーーーーーーーー btn ーーーーーーーー*/
+#contact .btn a,
+#thanks .btn a {
+    font-size: clamp(14px, 3rem, 16px);
+}
+.btn-hover {
+    border: 1px solid #201213;
+}
+.btn a {
+    position: relative;
+    display: inline-block;
+    padding: 1.2em 5.3em;
+}
+.btn i {
+    position: absolute;
+    top: 50%;
+}
+i::before {
+    position: absolute;
+    top: calc(50% - 1em);
+    right: 3rem;
+    font-size: 80%;
+}
+
+/*ーーーーーーーー hover ーーーーーーーー*/
+.btn-hover:hover {
+    border: none;
+    color: #fff;
+    background-color: var(--orange);
+    margin-bottom: 2px;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー Thanksページ ーーーーーーーーーーーーーーーーーーーーーー*/
+/*ーーーーーーーー 共通 ーーーーーーーー*/
+.orange {
+    color: var(--orange);
+}
+.green {
+    color: var(--green);
+}
+.orange,
+.green {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(28px, 6rem, 36px) !important;
+    font-weight: bold !important;
+}
+
+/*ーーーーーーーー フォント ーーーーーーーー*/
+.thanks-head .inner span {
+    font-size: clamp(14px, 3rem, 18px);
+    font-weight: bold;
+}
+#thanks h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(28px, 6rem, 36px);
+    font-weight: bold;
+}
+
+/*ーーーーーーーー メインビジュアルの幅 ーーーーーーーー*/
+#thanks .mv-img {
+    width: 80vw;
+}
+
+/* メインビジュアルと見出しの間の余白 */
+.thanks-head {
+    width: 80%;
+    margin: 0 auto 150px;
+}
+
+/* 注釈 */
+.thanks-note {
+    font-size: clamp(10px, 2.3rem, 12px);
+}
+
+/*ーーーーーーーー hover ーーーーーーーー*/
+#thanks .btn-hover:hover {
+    border: none;
+    color: #fff;
+    background-color: var(--green);
+    margin-bottom: 2px;
+}
+
+@media screen and (max-width: 580px) {
+    .thanks-head {
+        width: 100%;
+        margin-bottom: 100px !important;
+    }
+    #thanks .mv-img {
+        margin-bottom: 70px !important;
+    }
+    #thanks h2 {
+        margin-bottom: 40px;
+    }
+    #thanks .btn {
+        margin-bottom: 150px;
+    }
+}

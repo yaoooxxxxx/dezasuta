@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* フォント */
+/*ーーーーーーーー フォント ーーーーーーーー*/
 .works-inner h3 {
     font-size: clamp(14px, 3.3rem, 18px);
     font-weight: bold;
@@ -8,7 +8,11 @@
 .works-inner p {
     font-family: "Josefin Sans", sans-serif;
 }
-#works button a {
+#works .btn a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(14px, 3rem, 16px);
+}
+#work .btn a {
     font-family: "Josefin Sans", sans-serif;
     font-size: clamp(14px, 3rem, 16px);
 }
@@ -17,37 +21,24 @@
     font-weight: bold;
 }
 
-/* header */
-.header-inner {
-    padding: 80px 0;
-}
-.header-inner h1 {
-    width: 250px;
-}
-.header-inner ul {
-    gap: 4em;
-}
-.header-inner ul li {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: clamp(16px, 3.3rem, 18px);
-    font-weight: 700;
-}
-.header-inner ul li a:hover {
-    border-bottom: 2px solid #201213;
-}
-.header-inner_listitem:first-child:hover {
+/*ーーーーーーーー header ーーーーーーーー*/
+.header-inner_listitem--work:hover {
     border-bottom: none;
 }
-.header-inner_listitem:first-child {
-    border-bottom: 2px solid #201213;
-}
-.header-logo a:hover {
-    opacity: 0.7;
+.header-inner_listitem--work::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #4c4c4c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
-/* パンくず */
+/*ーーーーーーーー パンくず ーーーーーーーー*/
 .breadcrumb-inner {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 .breadcrumb li {
     display: inline; /*横に並ぶように*/
@@ -58,19 +49,100 @@
     content: ">";
     padding: 0 3em;
     color: #4c4c4c;
+    position: relative;
+    top: -2px;
 }
 .breadcrumb li:last-child:after {
     content: "";
 }
 .breadcrumb li a:hover {
-    border-bottom: 2px solid #201213;
+    border-bottom: 1px solid #4c4c4c;
 }
 .breadcrumb li a {
     font-size: clamp(12px, 2.7rem, 18px);
 }
-/* Works */
+
+/*ーーーーーーーー Works ーーーーーーーー*/
 .works-inner_item:hover {
     opacity: 0.7;
+}
+@media screen and (max-width: 580px) {
+    .works {
+        margin-bottom: 100px;
+    }
+    .works-inner h2 {
+        margin-bottom: 50px;
+    }
+    .works-inner_content {
+        display: block;
+        margin-bottom: 50px !important;
+    }
+    .works-inner_content div:first-child {
+        margin-bottom: 50px;
+    }
+}
+
+/*ーーーーーーーー About ーーーーーーーー*/
+.about-inner {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 65px 105px;
+}
+.about-inner_img {
+    flex-basis: 40%;
+}
+.about-inner_txt {
+    max-width: 464px;
+    flex: 1;
+}
+.about-inner_txt .title {
+    margin: 0 !important;
+    line-height: 1.5;
+}
+.about-inner_txt p {
+    margin-bottom: 2em;
+}
+.about-inner_gap {
+    gap: 11em;
+}
+@media screen and (max-width: 768px) {
+    .about-inner_gap {
+        display: block;
+    }
+    .about-inner_img {
+        width: 70%;
+        margin: 0 auto 40px;
+    }
+    .about-inner_name {
+        margin-bottom: 1.5em !important;
+    }
+    .about-inner_txt .title,
+    .about-inner_name,
+    .about-inner_txt .btn {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 580px) {
+    .about {
+        margin-bottom: 150px;
+    }
+    .about-inner {
+        padding: 55px 65px;
+    }
+}
+
+/*ーーーーーーーー btn ーーーーーーーー*/
+.btn-hover {
+    border: 1px solid #201213;
+}
+.btn a {
+    position: relative;
+    display: inline-block;
+    padding: 1.4em 5.3em 1em;
+}
+.btn i {
+    position: absolute;
+    top: 50%;
 }
 i::before {
     position: absolute;
@@ -78,33 +150,80 @@ i::before {
     right: 3rem;
     font-size: 80%;
 }
-/* About */
-.about-inner_txt button {
-    display: block;
-    width: 270px;
-    height: 52px;
-    border: 1px solid #201213;
-    text-align: center;
-}
-.about-inner {
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 65px 105px;
-}
-.about-inner_img {
-    margin-right: 70px;
-}
-.about-inner_txt {
-    max-width: 464px;
-    flex: 1;
-}
-.about-inner_txt p {
-    margin-bottom: 2em;
-}
 
-/* hover */
-.about-inner button:hover {
+/*ーーーーーーーー hover ーーーーーーーー*/
+.about-inner .btn-hover:hover {
     border: none;
     color: #fff;
     background-color: var(--green);
+    margin-bottom: 2px;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーー work（実績詳細ページ） ーーーーーーーーーーーーーーーーーーーーーー*/
+/* メインビジュアルの幅 */
+#work .mv-img {
+    width: 70vw;
+}
+/* メインコンテンツの横幅 */
+.work-main {
+    width: 80%;
+    margin: 0 auto 150px;
+}
+/* メインコンテンツ内の英字フォント指定 */
+.work-content span {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(14px, 3rem, 16px);
+    font-weight: bold;
+    border-bottom: 2px dotted #4c4c4c;
+}
+/* サイトの種別名 */
+.work-content_intro {
+    font-size: clamp(14px, 2.5rem, 18px);
+    font-weight: bold;
+}
+.work-content h2 {
+    font-size: clamp(28px, 4rem, 36px);
+    font-weight: bold;
+}
+/* サイトの説明文 */
+.work-content_info {
+    font-size: clamp(14px, 2.2rem, 16px);
+}
+
+/*ーーーーーーーー Other Works（その他の実績） ーーーーーーーー*/
+.otherworks h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(28px, 5.2rem, 36px);
+    font-weight: 700;
+}
+.works-inner_item h3 {
+    font-size: clamp(14px, 3.3rem, 18px);
+    font-weight: bold;
+}
+.works-inner_item p {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/*ーーーーーーーー hover ーーーーーーーー*/
+.btn-hover:hover {
+    border: none;
+    color: #fff;
+    background-color: var(--orange);
+    margin-bottom: 2px;
+}
+
+@media screen and (max-width: 580px) {
+    .breadcrumb-inner {
+        margin-bottom: 70px;
+    }
+    .work-main {
+        width: 100%;
+    }
+    .work-content_head,
+    .otherworks h2 {
+        margin-bottom: 50px;
+    }
+    .work-main {
+        margin-bottom: 100px;
+    }
 }

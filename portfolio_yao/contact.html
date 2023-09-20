@@ -1,14 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>contact｜toricom design</title>
+    <meta name="description"
+        content="toricom design｜クライアント様と緊密な連携をし、縁の下で効果的に支える役割を果たします。デザインがシームレスにビジネス戦略に統合されるよう努力し、成功の一翼を担います。">
+
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://toricom.jp/img/og-image.jpg">
+    <meta property="og:title" content="toricom design">
+    <meta property="og:description"
+        content="toricom designはクライアント様と緊密な連携をし、縁の下で効果的に支える役割を果たします。デザインがシームレスにビジネス戦略に統合されるよう努力し、成功の一翼を担います。">
+    <meta property="og:url" content="https://toricom.jp">
+    <meta property="og:site_name" content="toricom design">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="./favicon.ico">
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/d4da78b684.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="contact">
+    <header class="header block section">
+        <div class="header-inner inner flex_content flex_justify">
+            <h1 class="header-logo">
+                <a href="index.html"><img src="./assets/img/logo.png" alt="toricom design" class="full"></a>
+            </h1>
+            <ul class="header-inner_list flex_content flex_middle">
+                <li class="header-inner_listitem header-inner_listitem--work">
+                    <a href="works.html">Works</a>
+                </li>
+                <li class="header-inner_listitem header-inner_listitem--about">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="prelative header-inner_listitem header-inner_listitem--contact">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- パンくずリスト -->
+    <div class="section">
+        <div class="inner breadcrumb-inner">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="en">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name">TOP</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="en">
+                    <a itemprop="item" href="works.html">
+                        <span itemprop="name">Contact</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>
+            </ol>
+        </div>
+    </div>
+    <main class="contact" id="contact-main">
+        <div class="mv-img mb100">
+            <img src="./assets/img/contact.jpg" alt="お問い合わせ" class="full">
+        </div>
 
+        <section class="section contact-head">
+            <div class="inner">
+                <span class="iblock mb1">お問い合わせ</span>
+                <h2 class="mb70">Contact</h2>
+                <p>
+                    制作の依頼・ご相談などお気軽にお問い合わせください。<br>
+                    返信には2〜3日のお時間をいただく場合がございますので、予めご了承ください。<br>
+                    制作料金については、案件毎にお見積もりをさせて頂きますので、お問い合わせください。
+                </p>
+            </div>
+        </section>
+
+        <form class="section"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetWZVrrXRrrKG2p8O6ir0R86j3i86hxyuefPD2uF-FG5eEMQ/formResponse">
+            <div class="inner">
+                <dl class="contact-name mb50">
+                    <dt><label for="your-name" class="required">Name</label></dt>
+                    <dd><input type="text" name="your-name entry.1387651821" id="your-name"></dd>
+                </dl>
+                <dl class="contact-email mb50">
+                    <dt><label for="email" class="required">Mail Adress</label></dt>
+                    <dd><input type="email" name="email entry.1806709258" id="email"></dd>
+                </dl>
+                <dl class="contact-message">
+                    <dt class="message"><label for="message" class="required">Request / Message</label></dt>
+                    <dd><textarea name="message entry.135270929" id="message" cols="40" rows="8"></textarea></dd>
+                </dl>
+            </div>
+        </form>
+        <div class="mauto prelative center btn mb200">
+            <div class="iblock btn-hover">
+                <a href="thanks.html" class="center">送信する</a>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer center">
+        <div class="page-top prelative">
+            <a href="#" class="block"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+        <div class="footer-inner">
+            <div class="footer-sns flex_content flex_center mb2 gap">
+                <a href="https://www.instagram.com/yao.s_web/" target="_blank">
+                    <img src="./assets/img/ig-ico.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/shoko.yao.98/" target="_blank">
+                    <img src="./assets/img/fb-ico.png" alt="Facebook">
+                </a>
+            </div>
+            <p class="en">© 2023 toricom design yao</p>
+        </div>
+    </footer>
 </body>
 
 </html>

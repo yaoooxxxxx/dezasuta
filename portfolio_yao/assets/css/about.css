@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+/*ーーーーーーーー フォント ーーーーーーーー*/
+.about-head .inner span {
+    font-size: clamp(14px, 3rem, 18px);
+    font-weight: bold;
+}
+#about h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(28px, 6rem, 36px);
+    font-weight: bold;
+}
+#about h3 {
+    font-size: clamp(16px, 3.8rem, 18px);
+    font-weight: bold;
+}
+.about-anchor_flex a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(14px, 3rem, 18px);
+    font-weight: bold;
+}
+.orange {
+    color: var(--orange);
+}
+.green {
+    color: var(--green);
+}
+
+/*ーーーーーーーー 共通 ーーーーーーーー*/
+.section_inner {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 9%;
+}
+.about-section_img {
+    flex-basis: 35%;
+    margin-top: -20em;
+}
+
+/*ーーーーーーーー header ーーーーーーーー*/
+.header-inner_listitem--about:hover {
+    border-bottom: none;
+}
+.header-inner_listitem--about::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #4c4c4c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*ーーーーーーーー パンくず ーーーーーーーー*/
+.breadcrumb-inner {
+    margin-bottom: 100px;
+}
+.breadcrumb li {
+    display: inline; /*横に並ぶように*/
+    font-weight: 600;
+}
+.breadcrumb li:after {
+    /* >を表示*/
+    content: ">";
+    padding: 0 3em;
+    color: #4c4c4c;
+    position: relative;
+    top: -2px;
+}
+.breadcrumb li:last-child:after {
+    content: "";
+}
+.breadcrumb li a:hover {
+    border-bottom: 1px solid #4c4c4c;
+}
+.breadcrumb li a {
+    font-size: clamp(12px, 2.7rem, 18px);
+}
+@media screen and (max-width: 580px) {
+    .breadcrumb-inner {
+        margin-bottom: 70px;
+    }
+}
+
+/*ーーーーーーーー メインビジュアルの幅 ーーーーーーーー*/
+#about .mv-img {
+    width: 70vw;
+}
+@media screen and (max-width: 580px) {
+    #about .mv-img {
+        margin-bottom: 70px;
+    }
+}
+
+/*ーーーーーーーー 自己紹介エリア ーーーーーーーー*/
+.about-head {
+    width: 80%;
+    margin: 0 auto 150px;
+}
+.about-desc p {
+    flex-basis: 48%;
+}
+@media screen and (max-width: 580px) {
+    .about-head {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .about-head h2 {
+        margin-bottom: 50px;
+    }
+    .about-desc {
+        display: block;
+    }
+    .about-desc p:first-child {
+        margin-bottom: 2em;
+    }
+}
+
+/*ーーーーーーーー 各セクションへのアンカーボタン ーーーーーーーー*/
+.about-anchor_flex a::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+.about-anchor_flex a::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid var(--black);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+@media screen and (max-width: 580px) {
+    .about-anchor {
+        margin-bottom: 70px;
+    }
+}
+
+/*ーーーーーーーー Service ーーーーーーーー*/
+.about-service_desc {
+    flex-basis: 55%;
+}
+.about-service_desc p {
+    padding-bottom: 2em;
+    margin-bottom: 2.5em;
+    border-bottom: 1px solid #999;
+}
+.about-service_desc p:last-child {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.about-service_desc h3 span {
+    margin-right: 0.5em;
+}
+
+/*ーーーーーーーー Tool ーーーーーーーー*/
+#tool .about-section_img img {
+    width: 80%;
+    height: auto;
+}
+.about-tool_desc {
+    flex-basis: 55%;
+}
+.about-tool_desc p {
+    padding-bottom: 2em;
+    margin-bottom: 2.5em;
+    border-bottom: 1px solid #999;
+}
+.about-tool_desc p:last-child {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.about-tool_desc h3::before {
+    content: "●";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 1em;
+}
+
+/*ーーーーーーーー Message ーーーーーーーー*/
+.about-message_left h3 {
+    line-height: 1.75;
+}
+.about-message_left {
+    flex-basis: 35%;
+}
+.about-message_right {
+    flex-basis: 55%;
+}
+.about-message_right h3::before {
+    content: "●";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 1em;
+}
+.about-message_right p {
+    padding-bottom: 2em;
+    margin-bottom: 2.5em;
+    border-bottom: 1px solid #999;
+}
+.about-message_right p:last-child {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.about-message_toperson {
+    border-top: 1px solid #999;
+}
+
+@media screen and (max-width: 580px) {
+    .section_inner {
+        padding: 15% 9%;
+    }
+    #service,
+    #tool {
+        margin-bottom: 70px;
+    }
+    #message {
+        margin-bottom: 100px;
+    }
+    .service-content {
+        display: block;
+    }
+    .about-section_img {
+        width: 80%;
+        margin: -10em auto 20em;
+    }
+    .about-message_tocompany,
+    .about-message_toperson {
+        display: block;
+    }
+    #about h3 {
+        margin-bottom: 1.5em !important;
+    }
+    .about-message_left {
+        margin-bottom: 40px;
+    }
+    #about-main .btn {
+        margin-bottom: 150px;
+    }
+}
+
+/*ーーーーーーーー btn ーーーーーーーー*/
+#about .btn a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: clamp(14px, 3rem, 16px);
+}
+.btn-hover {
+    border: 1px solid #201213;
+}
+.btn a {
+    position: relative;
+    display: inline-block;
+    padding: 1.4em 5.3em 1em;
+}
+.btn i {
+    position: absolute;
+    top: 50%;
+}
+i::before {
+    position: absolute;
+    top: calc(50% - 0.7em);
+    right: 3rem;
+    font-size: 80%;
+}
+
+/*ーーーーーーーー hover ーーーーーーーー*/
+.about-inner .btn-hover:hover {
+    border: none;
+    color: #fff;
+    background-color: var(--green);
+    margin-bottom: 2px;
+}
+
+/*ーーーーーーーー hover ーーーーーーーー*/
+.btn-hover:hover {
+    border: none;
+    color: #fff;
+    background-color: var(--orange);
+    margin-bottom: 2px;
+}

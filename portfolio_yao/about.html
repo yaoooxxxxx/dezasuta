@@ -1,14 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>about｜toricom design</title>
+    <meta name="description"
+        content="toricom design｜クライアント様と緊密な連携をし、縁の下で効果的に支える役割を果たします。デザインがシームレスにビジネス戦略に統合されるよう努力し、成功の一翼を担います。">
+
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://toricom.jp/img/og-image.jpg">
+    <meta property="og:title" content="toricom design">
+    <meta property="og:description"
+        content="toricom designはクライアント様と緊密な連携をし、縁の下で効果的に支える役割を果たします。デザインがシームレスにビジネス戦略に統合されるよう努力し、成功の一翼を担います。">
+    <meta property="og:url" content="https://toricom.jp">
+    <meta property="og:site_name" content="toricom design">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="./favicon.ico">
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/d4da78b684.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="about">
+    <header class="header block section">
+        <div class="header-inner inner flex_content flex_justify">
+            <h1 class="header-logo">
+                <a href="index.html"><img src="./assets/img/logo.png" alt="toricom design" class="full"></a>
+            </h1>
+            <ul class="header-inner_list flex_content flex_middle">
+                <li class="header-inner_listitem header-inner_listitem--work">
+                    <a href="works.html">Works</a>
+                </li>
+                <li class="prelative header-inner_listitem header-inner_listitem--about">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="header-inner_listitem header-inner_listitem--contact">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- パンくずリスト -->
+    <div class="section">
+        <div class="inner breadcrumb-inner">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="en">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name">TOP</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="en">
+                    <a itemprop="item" href="works.html">
+                        <span itemprop="name">About</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>
+            </ol>
+        </div>
+    </div>
 
+    <main class="about" id="about-main">
+        <div class="mv-img mb100">
+            <img src="./assets/img/about.jpg" alt="toricom design" class="full">
+        </div>
+
+        <!-- 自己紹介エリア -->
+        <section class="section about-head">
+            <div class="inner">
+                <span class="iblock mb1">八尾 祥好</span>
+                <h2 class="mb70">Shoko Yao</h2>
+                <div class="about-desc flex_content flex_justify">
+                    <p>
+                        大阪生まれ大阪育ち。<br>
+                        幼少期から父の影響で動物が好きです。<br>
+                        現在は小動物カフェとデザイン会社でのパートを掛け持ちしながらフリーでデザイン業をしています。<br>
+                        前職は動物病院や旅行会社で接客や事務職を経験しました。
+                    </p>
+                    <p>
+                        コロナウイルスの蔓延に伴い、旅行会社の派遣契約が満了となったことをきっかけにデザインを学び始めました。<br>
+                        現在は個人事業主の方から直接ご依頼を頂いたり、広告会社から業務委託を受けながら活動しています。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 各セクションへのアンカーボタン -->
+        <div class="inner about-anchor mb100">
+            <div class="flex_content flex_center gap about-anchor_flex">
+                <a href="#service" class="prelative">Service</a>
+                <a href="#tool" class="prelative">Tool</a>
+                <a href="#message" class="prelative">Message</a>
+            </div>
+        </div>
+
+        <!-- Service -->
+        <section id="service" class="section mb100">
+            <div class="inner section_inner">
+                <h2 class="center mb70">Service</h2>
+                <div class="flex_content flex_justify flex_middle service-content">
+                    <div class="about-section_img">
+                        <img src="./assets/img/abou-service.png" alt="Service" class="full">
+                    </div>
+                    <div class="about-service_desc">
+                        <h3 class="mb05"><span class="en">01.</span>ホームページ デザイン</h3>
+                        <p>各種サイトのデザインをさせて頂きます。トップページのみ、下層ページのみ、などサイトの一部のデザインも可能です。</p>
+                        <h3 class="mb05"><span class="en">02.</span>ランディングページ デザイン</h3>
+                        <p>コンバージョンにこだわった、反応が取れるランディングページを目指して制作することを意識します。</p>
+                        <h3 class="mb05"><span class="en">03.</span>コーディング</h3>
+                        <p>HTML,CSSを使用したコーディング業務が可能です。
+                            なお、JavaScript,PHP,WordPressなどを使用する作業につきましては一部請け負いが不可となります。事前にお問い合わせください。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tool -->
+        <section id="tool" class="section mb100">
+            <div class="inner section_inner">
+                <h2 class="center mb70">Tool</h2>
+                <div class="flex_content flex_justify flex_middle service-content">
+                    <div class="about-section_img center">
+                        <img src="./assets/img/abuot-tool.png" alt="Tool">
+                    </div>
+                    <div class="about-tool_desc">
+                        <h3 class="mb05">使用ツール</h3>
+                        <p>Adobe Photoshop / Adobe Illustrator / Figma<br>
+                            Adobe Dreamweaver / VS Code</p>
+                        <h3 class="mb05">対応地域</h3>
+                        <p>所在地は大阪ですが、関西だけでなくオンラインにて関東や西日本など全国のお客さまとお取り引きさせて頂いております。</p>
+                        <h3 class="mb05">コンセプト</h3>
+                        <p>縁の下の力持ち的な立ち位置で、事業の認知拡大、売上アップ、長期継続のサポートができるビジネスパートナーとして戦略的にデザインを考えます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message -->
+        <section id="message" class="section mb150">
+            <div class="inner section_inner">
+                <h2 class="center mb70">Message</h2>
+                <div class="flex_content flex_justify about-message_tocompany mb100">
+                    <div class="about-message_left">
+                        <h3 class="mb2"><span class="en"><span class="orange">W</span>eb</span>デザイナーのパートナーを<br>
+                            お探しの企業さまへ</h3>
+                        <p>デザイン制作会社・コンサルティング会社・フリーランスのWebディレクターさまよりWebデザイン等の業務を受託しております。
+                            外部パートナースタッフをお探しでしたら、ぜひ一度お問い合わせください。
+                        </p>
+                    </div>
+                    <div class="about-message_right">
+                        <h3>制作環境について</h3>
+                        <p>普段はMacBook Pro13-inchにて作業しております。<br>
+                            データ形式については、PSD,AI,Figmaなどご希望に沿って制作いたします。
+                        </p>
+                        <h3>ワイヤーフレーム・原稿について</h3>
+                        <p>ワイヤーフレームや文字原稿につきましては、こちらで制作することはできかねますので、ご入稿をお願いする形となります。<br>
+                            ご入稿が難しい場合は外部のライター様に外注することもございます。
+                        </p>
+                        <h3>写真・イラスト素材について</h3>
+                        <p>素材をお持ちでしたら支給頂きますようお願いいたします。もちろん無料素材から当方で選定することも可能です。有料素材の場合は実費請求とさせて頂きますので、予めご了承ください。
+                        </p>
+                        <h3>納期について</h3>
+                        <p>案件ごとに要相談とさせて頂いております。ご希望の納期がございましたら事前に指定をお願いいたします。（ご希望に応えられない場合は事前にお断りさせて頂きますのでご安心ください）
+                        </p>
+                        <h3>ご請求について</h3>
+                        <p>請求、支払いのタイミングはご希望がございましたらお申し付けくださいませ。指定が無い場合は、納品した月の月末に請求書の送付をさせて頂きますので、お振込にて翌月末のご入金をお願いいたします。
+                        </p>
+                        <h3>お打ち合わせについて</h3>
+                        <p>日中は小動物カフェとデザイン会社の出勤があるため、極力オンライン会議にてお願いする形となります。また、エンドクライアントさまと当方が直接やりとりすることはトラブルの懸念もございますので控えさせて頂きます。
+                        </p>
+                        <h3>ご連絡方法について</h3>
+                        <p>受注後のやりとりにつきましては、メール、Chatwork、Slack、Facebookメッセンジャーなど、ご都合の良い方法で対応させていただきます。<br>
+                            容量の大きいファイルの受け渡しは指定が無い限り、ギガファイル便を使用いたします。
+                        </p>
+                    </div>
+                </div>
+                <div class="flex_content flex_justify about-message_toperson pt100">
+                    <div class="about-message_left">
+                        <h3 class="mb2"><span class="green">ホ</span>ームページを作成されたい<br>
+                            一般企業・個人事業主さまへ</h3>
+                        <p class="mb1">ホームページ制作をご希望の事業者さまは一度お問い合わせくださいませ。
+                            制作規模によりましては、知り合いの制作会社やSNSのマーケティングが得意な会社さまとお繋ぎさせて頂きます。
+                        </p>
+                        <p class="mb1">また、WEBデザインのみではなく、名刺やショップカード、リーフレットなどの制作を請け負っていた経験から、紙媒体の制作も承ります。
+                        </p>
+                        <p>事業の立ち上げ、規模拡大、販路拡大などをご検討の方はぜひ一度お問い合わせくださいませ。
+                        </p>
+                    </div>
+                    <div class="about-message_right">
+                        <h3>ホームページ制作</h3>
+                        <p>当方にて、自社ホームページや事業主さまのポートフォリオサイト、事業紹介サイト、名刺代わりの自己紹介サイトなどを制作させて頂きます。
+                        </p>
+                        <h3>名刺制作</h3>
+                        <p>渡すだけで終わりではなく、事業チャンスにつながるように導線を考えた名刺作りを意識しています。<br>
+                            サイト制作と合わせてご相談いただきますと、イメージや印象が統一された名刺が出来上がります。
+                        </p>
+                        <h3>ランディングページ制作</h3>
+                        <p>交流会などで配布する名刺やチラシから誘導するランディングページを作成して、事業チャンスを掴むお手伝いをさせて頂きます。<br>
+                            最近よく見かけるようになった自己紹介LPなども制作可能です。プロフィール写真をお持ちでない方は、カメラマンをお繋ぎすることも可能ですのでご安心ください。
+                        </p>
+                        <h3>SNS画像など</h3>
+                        <p>投稿画像やプロフィール画面のヘッダーなど、各種バナーの制作が可能です。また、SNS運用の面についてお悩みの方には信頼できるSNSマーケターのご紹介もさせて頂きますので、デザインの方向性やSNS運用の方向性にお悩みの方は一度ご相談ください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mauto prelative center btn mb200">
+            <div class="iblock btn-hover">
+                <a href="contact.html" class="center">Contact</a>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </main>
+    <footer class="footer center">
+        <div class="page-top prelative">
+            <a href="#" class="block"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+        <div class="footer-inner">
+            <div class="footer-sns flex_content flex_center mb2 gap">
+                <a href="https://www.instagram.com/yao.s_web/" target="_blank">
+                    <img src="./assets/img/ig-ico.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/shoko.yao.98/" target="_blank">
+                    <img src="./assets/img/fb-ico.png" alt="Facebook">
+                </a>
+            </div>
+            <p class="en">© 2023 toricom design yao</p>
+        </div>
+    </footer>
 </body>
 
 </html>
