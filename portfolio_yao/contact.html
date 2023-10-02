@@ -94,7 +94,8 @@
         </section>
 
         <form class="section prelative"
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetWZVrrXRrrKG2p8O6ir0R86j3i86hxyuefPD2uF-FG5eEMQ/formResponse">
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetWZVrrXRrrKG2p8O6ir0R86j3i86hxyuefPD2uF-FG5eEMQ/formResponse"
+            method="post" target="hidden_iframe" onsubmit="submitted=true;">
             <div class="section-obj obj01 block"></div>
             <div class="section-obj obj02 block"></div>
             <div class="inner prelative mb100">
@@ -118,6 +119,11 @@
                 </div>
             </div>
         </form>
+        <script type="text/javascript">
+            var submitted = false;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+            onload="if(submitted)  {window.location='thanks.html';}"></iframe>
     </main>
 
     <footer class="footer center">
