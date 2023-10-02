@@ -28,16 +28,24 @@
     top: 50%;
     left: 18%;
     z-index: 999;
-    width: 338px;
+    width: 80vw;
+    min-width: 200px;
     height: auto;
     transform: translate(0, -50%);
-    font-size: clamp(14px, 4rem, 26px);
+    font-size: clamp(15px, 5rem, 26px);
     line-height: 1.75;
+}
+@media screen and (max-width: 580px) {
+    .mv-txt {
+        font-size: clamp(18px, 10rem, 28px);
+        top: 60%;
+        left: 13%;
+    }
 }
 
 /*ーーーーーーーー Works ーーーーーーーー*/
 .works-inner_item:hover {
-    opacity: 0.7;
+    filter: invert(10%);
 }
 @media screen and (max-width: 580px) {
     .works {
@@ -84,6 +92,7 @@
     }
     .about-inner_img {
         width: 70%;
+        max-width: 280px;
         margin: 0 auto 40px;
     }
     .about-inner_name {
@@ -100,7 +109,12 @@
         margin-bottom: 150px;
     }
     .about-inner {
-        padding: 55px 65px;
+        padding: 20rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .about-inner_txt .btn .btn-hover a {
+        padding: 1.4em 2.3em 1em;
     }
 }
 

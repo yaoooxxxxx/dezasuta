@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="./assets/css/contact.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/d4da78b684.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body id="contact">
@@ -71,8 +73,12 @@
         </div>
     </div>
     <main class="contact" id="contact-main">
-        <div class="mv-img mb100">
-            <img src="./assets/img/contact.jpg" alt="お問い合わせ" class="full">
+        <div class="section-mv mb100 prelative">
+            <div class="section-obj obj01 block"></div>
+            <div class="section-obj obj02 block"></div>
+            <div class="mv-img prelative">
+                <img src="./assets/img/contact.jpg" alt="お問い合わせ" class="full">
+            </div>
         </div>
 
         <section class="section contact-head">
@@ -87,29 +93,31 @@
             </div>
         </section>
 
-        <form class="section"
+        <form class="section prelative"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetWZVrrXRrrKG2p8O6ir0R86j3i86hxyuefPD2uF-FG5eEMQ/formResponse">
-            <div class="inner">
+            <div class="section-obj obj01 block"></div>
+            <div class="section-obj obj02 block"></div>
+            <div class="inner prelative mb100">
                 <dl class="contact-name mb50">
                     <dt><label for="your-name" class="required">Name</label></dt>
-                    <dd><input type="text" name="your-name entry.1387651821" id="your-name"></dd>
+                    <dd><input type="text" name="entry.1387651821" id="your-name"></dd>
                 </dl>
                 <dl class="contact-email mb50">
                     <dt><label for="email" class="required">Mail Adress</label></dt>
-                    <dd><input type="email" name="email entry.1806709258" id="email"></dd>
+                    <dd><input type="email" name="entry.1806709258" id="email"></dd>
                 </dl>
                 <dl class="contact-message">
                     <dt class="message"><label for="message" class="required">Request / Message</label></dt>
-                    <dd><textarea name="message entry.135270929" id="message" cols="40" rows="8"></textarea></dd>
+                    <dd><textarea name="entry.135270929" id="message" cols="40" rows="8"></textarea></dd>
                 </dl>
             </div>
-        </form>
-        <div class="mauto prelative center btn mb200">
-            <div class="iblock btn-hover">
-                <a href="thanks.html" class="center">送信する</a>
-                <i class="fa-solid fa-chevron-right"></i>
+            <div class="mauto prelative center btn mb200">
+                <div class="iblock btn-hover">
+                    <button type="submit" class="center" value="送信する">送信する</button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
             </div>
-        </div>
+        </form>
     </main>
 
     <footer class="footer center">

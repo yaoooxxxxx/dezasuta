@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/d4da78b684.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body id="index">
@@ -56,7 +58,10 @@
         <!-- ーーーメインビジュアルここからーーー -->
         <div class="mv prelative mb150">
             <div class="mv-bg">
-                <img src="./assets/img/mv_bg.jpg" alt="笑顔の三毛猫" class="full">
+                <picture>
+                    <source srcset="./assets/img/mv_bg_sp.jpg" media="(max-width: 580px)" type="image/jpg">
+                    <img src="./assets/img/mv_bg.jpg" alt="笑顔の三毛猫" class="full">
+                </picture>
             </div>
             <p class="mv-txt">
                 信頼できる<br>
@@ -67,8 +72,10 @@
         <!-- ーーーメインビジュアルここまでーーー -->
 
         <!-- ーーーWorksここからーーー -->
-        <section class="section works mb150">
-            <div class="inner works-inner">
+        <section class="section works mb150 prelative">
+            <div class="section-obj obj01 block"></div>
+            <div class="section-obj obj02 block"></div>
+            <div class="inner works-inner prelative">
                 <h2 class="center mb70">Work</h2>
                 <div class="flex_content flex_justify mb70 gap works-inner_content">
                     <div class="works-inner_item">
@@ -120,7 +127,7 @@
                 </div>
                 <div class="mauto prelative center btn">
                     <div class="iblock btn-hover">
-                        <a href="/work.html" class="center">View More Works</a>
+                        <a href="work.html" class="center">View More Works</a>
                         <i class="fa-solid fa-chevron-right"></i>
                     </div>
                 </div>
@@ -129,8 +136,10 @@
         <!-- ーーーWorksここまでーーー -->
 
         <!-- ーーーaboutここからーーー -->
-        <div class="section about mb200">
-            <div class="inner about-inner">
+        <div class="section about mb200 prelative">
+            <div class="section-obj obj01 block"></div>
+            <div class="section-obj obj02 block"></div>
+            <div class="inner about-inner prelative">
                 <div class="flex_content flex_middle about-inner_gap">
                     <div class="about-inner_img">
                         <img src="./assets/img/about.png" alt="toricom design" class="full">
@@ -145,7 +154,7 @@
                             毎日かわいいです。</p>
                         <div class="prelative btn">
                             <div class="iblock btn-hover">
-                                <a href="/about.html" class="center">View More About</a>
+                                <a href="about.html" class="center">View More About</a>
                                 <i class="fa-solid fa-chevron-right"></i>
                             </div>
                         </div>

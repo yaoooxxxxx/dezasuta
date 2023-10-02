@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="./assets/css/about.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/d4da78b684.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body id="about">
@@ -72,8 +74,12 @@
     </div>
 
     <main class="about" id="about-main">
-        <div class="mv-img mb100">
-            <img src="./assets/img/about.jpg" alt="toricom design" class="full">
+        <div class="section-mv mb100 prelative">
+            <div class="section-obj obj01 block"></div>
+            <div class="section-obj obj02 block"></div>
+            <div class="mv-img prelative">
+                <img src="./assets/img/about.jpg" alt="toricom design" class="full">
+            </div>
         </div>
 
         <!-- 自己紹介エリア -->
@@ -106,8 +112,10 @@
         </div>
 
         <!-- Service -->
-        <section id="service" class="section mb100">
-            <div class="inner section_inner">
+        <section id="service" class="section mb100 prelative">
+            <div class="section-obj obj01 block"></div>
+            <div class="section-obj obj02 block"></div>
+            <div class="inner section_inner prelative">
                 <h2 class="center mb70">Service</h2>
                 <div class="flex_content flex_justify flex_middle service-content">
                     <div class="about-section_img">
@@ -127,8 +135,10 @@
         </section>
 
         <!-- Tool -->
-        <section id="tool" class="section mb100">
-            <div class="inner section_inner">
+        <section id="tool" class="section mb100 prelative">
+            <div class="section-obj obj01 block"></div>
+            <div class="section-obj obj02 block"></div>
+            <div class="inner section_inner prelative">
                 <h2 class="center mb70">Tool</h2>
                 <div class="flex_content flex_justify flex_middle service-content">
                     <div class="about-section_img center">
@@ -148,47 +158,50 @@
         </section>
 
         <!-- Message -->
-        <section id="message" class="section mb150">
-            <div class="inner section_inner">
+        <section id="message" class="section mb150 prelative">
+            <div class="section-obj obj01 block"></div>
+            <div class="section-obj obj02 block"></div>
+            <div class="inner section_inner prelative">
                 <h2 class="center mb70">Message</h2>
                 <div class="flex_content flex_justify about-message_tocompany mb100">
                     <div class="about-message_left">
-                        <h3 class="mb2"><span class="en"><span class="orange">W</span>eb</span>デザイナーのパートナーを<br>
+                        <h3 class="mb2"><span class="en"><span class="orange">W</span>eb</span>デザイナーのパートナーを<br
+                                class="pc_block">
                             お探しの企業さまへ</h3>
                         <p>デザイン制作会社・コンサルティング会社・フリーランスのWebディレクターさまよりWebデザイン等の業務を受託しております。
                             外部パートナースタッフをお探しでしたら、ぜひ一度お問い合わせください。
                         </p>
                     </div>
-                    <div class="about-message_right">
-                        <h3>制作環境について</h3>
-                        <p>普段はMacBook Pro13-inchにて作業しております。<br>
+                    <dl class="about-message_right">
+                        <dt>●制作環境について</dt>
+                        <dd>普段はMacBook Pro13-inchにて作業しております。<br>
                             データ形式については、PSD,AI,Figmaなどご希望に沿って制作いたします。
-                        </p>
-                        <h3>ワイヤーフレーム・原稿について</h3>
-                        <p>ワイヤーフレームや文字原稿につきましては、こちらで制作することはできかねますので、ご入稿をお願いする形となります。<br>
+                        </dd>
+                        <dt>●ワイヤーフレーム・原稿について</dt>
+                        <dd>ワイヤーフレームや文字原稿につきましては、こちらで制作することはできかねますので、ご入稿をお願いする形となります。<br>
                             ご入稿が難しい場合は外部のライター様に外注することもございます。
-                        </p>
-                        <h3>写真・イラスト素材について</h3>
-                        <p>素材をお持ちでしたら支給頂きますようお願いいたします。もちろん無料素材から当方で選定することも可能です。有料素材の場合は実費請求とさせて頂きますので、予めご了承ください。
-                        </p>
-                        <h3>納期について</h3>
-                        <p>案件ごとに要相談とさせて頂いております。ご希望の納期がございましたら事前に指定をお願いいたします。（ご希望に応えられない場合は事前にお断りさせて頂きますのでご安心ください）
-                        </p>
-                        <h3>ご請求について</h3>
-                        <p>請求、支払いのタイミングはご希望がございましたらお申し付けくださいませ。指定が無い場合は、納品した月の月末に請求書の送付をさせて頂きますので、お振込にて翌月末のご入金をお願いいたします。
-                        </p>
-                        <h3>お打ち合わせについて</h3>
-                        <p>日中は小動物カフェとデザイン会社の出勤があるため、極力オンライン会議にてお願いする形となります。また、エンドクライアントさまと当方が直接やりとりすることはトラブルの懸念もございますので控えさせて頂きます。
-                        </p>
-                        <h3>ご連絡方法について</h3>
-                        <p>受注後のやりとりにつきましては、メール、Chatwork、Slack、Facebookメッセンジャーなど、ご都合の良い方法で対応させていただきます。<br>
+                        </dd>
+                        <dt>●写真・イラスト素材について</dt>
+                        <dd>素材をお持ちでしたら支給頂きますようお願いいたします。もちろん無料素材から当方で選定することも可能です。有料素材の場合は実費請求とさせて頂きますので、予めご了承ください。
+                        </dd>
+                        <dt>●納期について</dt>
+                        <dd>案件ごとに要相談とさせて頂いております。ご希望の納期がございましたら事前に指定をお願いいたします。（ご希望に応えられない場合は事前にお断りさせて頂きますのでご安心ください）
+                        </dd>
+                        <dt>●ご請求について</dt>
+                        <dd>請求、支払いのタイミングはご希望がございましたらお申し付けくださいませ。指定が無い場合は、納品した月の月末に請求書の送付をさせて頂きますので、お振込にて翌月末のご入金をお願いいたします。
+                        </dd>
+                        <dt>●お打ち合わせについて</dt>
+                        <dd>日中は小動物カフェとデザイン会社の出勤があるため、極力オンライン会議にてお願いする形となります。また、エンドクライアントさまと当方が直接やりとりすることはトラブルの懸念もございますので控えさせて頂きます。
+                        </dd>
+                        <dt>●ご連絡方法について</dt>
+                        <dd>受注後のやりとりにつきましては、メール、Chatwork、Slack、Facebookメッセンジャーなど、ご都合の良い方法で対応させていただきます。<br>
                             容量の大きいファイルの受け渡しは指定が無い限り、ギガファイル便を使用いたします。
-                        </p>
-                    </div>
+                        </dd>
+                    </dl>
                 </div>
                 <div class="flex_content flex_justify about-message_toperson pt100">
                     <div class="about-message_left">
-                        <h3 class="mb2"><span class="green">ホ</span>ームページを作成されたい<br>
+                        <h3 class="mb2"><span class="green">ホ</span>ームページを作成されたい<br class="pc_block">
                             一般企業・個人事業主さまへ</h3>
                         <p class="mb1">ホームページ制作をご希望の事業者さまは一度お問い合わせくださいませ。
                             制作規模によりましては、知り合いの制作会社やSNSのマーケティングが得意な会社さまとお繋ぎさせて頂きます。
@@ -198,22 +211,22 @@
                         <p>事業の立ち上げ、規模拡大、販路拡大などをご検討の方はぜひ一度お問い合わせくださいませ。
                         </p>
                     </div>
-                    <div class="about-message_right">
-                        <h3>ホームページ制作</h3>
-                        <p>当方にて、自社ホームページや事業主さまのポートフォリオサイト、事業紹介サイト、名刺代わりの自己紹介サイトなどを制作させて頂きます。
-                        </p>
-                        <h3>名刺制作</h3>
-                        <p>渡すだけで終わりではなく、事業チャンスにつながるように導線を考えた名刺作りを意識しています。<br>
+                    <dl class="about-message_right">
+                        <dt>●ホームページ制作</dt>
+                        <dd>当方にて、自社ホームページや事業主さまのポートフォリオサイト、事業紹介サイト、名刺代わりの自己紹介サイトなどを制作させて頂きます。
+                        </dd>
+                        <dt>●名刺制作</dt>
+                        <dd>渡すだけで終わりではなく、事業チャンスにつながるように導線を考えた名刺作りを意識しています。<br>
                             サイト制作と合わせてご相談いただきますと、イメージや印象が統一された名刺が出来上がります。
-                        </p>
-                        <h3>ランディングページ制作</h3>
-                        <p>交流会などで配布する名刺やチラシから誘導するランディングページを作成して、事業チャンスを掴むお手伝いをさせて頂きます。<br>
+                        </dd>
+                        <dt>●ランディングページ制作</dt>
+                        <dd>交流会などで配布する名刺やチラシから誘導するランディングページを作成して、事業チャンスを掴むお手伝いをさせて頂きます。<br>
                             最近よく見かけるようになった自己紹介LPなども制作可能です。プロフィール写真をお持ちでない方は、カメラマンをお繋ぎすることも可能ですのでご安心ください。
-                        </p>
-                        <h3>SNS画像など</h3>
-                        <p>投稿画像やプロフィール画面のヘッダーなど、各種バナーの制作が可能です。また、SNS運用の面についてお悩みの方には信頼できるSNSマーケターのご紹介もさせて頂きますので、デザインの方向性やSNS運用の方向性にお悩みの方は一度ご相談ください。
-                        </p>
-                    </div>
+                        </dd>
+                        <dt>●SNS画像など</dt>
+                        <dd>投稿画像やプロフィール画面のヘッダーなど、各種バナーの制作が可能です。また、SNS運用の面についてお悩みの方には信頼できるSNSマーケターのご紹介もさせて頂きますので、デザインの方向性やSNS運用の方向性にお悩みの方は一度ご相談ください。
+                        </dd>
+                    </dl>
                 </div>
             </div>
         </section>
@@ -240,6 +253,14 @@
             <p class="en">© 2023 toricom design yao</p>
         </div>
     </footer>
+    <script>
+        $(function () {
+            $('dt').on('click', function () {
+                $(this).toggleClass('is-open');
+                $(this).next().slideToggle();
+            });
+        });
+    </script>
 </body>
 
 </html>

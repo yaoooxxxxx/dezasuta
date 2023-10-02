@@ -36,6 +36,24 @@
     flex-basis: 35%;
     margin-top: -20em;
 }
+/*ーーーーーーーー 背景オブジェクト ーーーーーーーー*/
+#service .obj02,
+#tool .obj02,
+#message .obj02 {
+    top: 63%;
+    left: 15%;
+}
+#tool .obj01 {
+    top: 0;
+    background: rgba(131, 194, 128, 0.2);
+}
+#tool .obj02 {
+    background: rgba(239, 114, 67, 0.2);
+}
+#message .obj01 {
+    top: 20%;
+    right: 6%;
+}
 
 /*ーーーーーーーー header ーーーーーーーー*/
 .header-inner_listitem--about:hover {
@@ -86,6 +104,11 @@
 /*ーーーーーーーー メインビジュアルの幅 ーーーーーーーー*/
 #about .mv-img {
     width: 70vw;
+}
+@media screen and (max-width: 680px) {
+    #about .mv-img {
+        width: 92vw;
+    }
 }
 @media screen and (max-width: 580px) {
     #about .mv-img {
@@ -201,19 +224,42 @@
 .about-message_right {
     flex-basis: 55%;
 }
-.about-message_right h3::before {
-    content: "●";
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    margin-right: 1em;
+#about dt {
+    font-size: clamp(15px, 3.8rem, 18px);
+    font-weight: bold;
+    position: relative;
+    padding: 2em 3em 1em 0;
+    line-height: 1.5;
 }
-.about-message_right p {
+#about dt:first-child {
+    padding-top: 0;
+}
+#about dt:not(:first-child) {
+    border-top: 1px solid #999;
+}
+#about dt::before {
+    content: "＋";
+    position: absolute;
+    top: 2em;
+    right: 20px;
+    transition: 0.3s;
+}
+#about dt:first-child::before {
+    top: 0;
+}
+#about dt.is-open::before {
+    content: "ー";
+}
+#about dt:hover {
+    cursor: pointer;
+}
+#about dd {
+    display: none;
     padding-bottom: 2em;
-    margin-bottom: 2.5em;
-    border-bottom: 1px solid #999;
+    font-size: clamp(14px, 3rem, 16px);
+    line-height: 1.75;
 }
-.about-message_right p:last-child {
+#about dd:last-child {
     padding: 0;
     margin: 0;
     border: 0;

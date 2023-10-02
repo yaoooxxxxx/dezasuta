@@ -467,6 +467,7 @@ body {
     padding: 0;
     position: relative;
     background-color: var(--gray);
+    overflow-x: hidden; /* 背景の円が画面からはみ出しても横スクロールが出ないようにする */
 }
 /* ーーーーーーーー フォント ーーーーーーーー*/
 html {
@@ -759,7 +760,7 @@ p {
 .sp_none {
     display: none;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 480px) {
     .pc_block {
         display: none;
     }
@@ -784,6 +785,35 @@ p {
     }
 }
 
+/*ーーーーーーーー 背景のオブジェクト ーーーーーーーー*/
+.section-obj {
+    /* 円のオブジェクト */
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 99rem;
+}
+.obj01 {
+    top: 20%;
+    right: 5%;
+    background: rgba(239, 114, 67, 0.2);
+}
+.obj02 {
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%);
+    background: rgba(131, 194, 128, 0.2);
+}
+/* 固定ページ：mvの背景オブジェクト位置調整 */
+.section-mv .obj01 {
+    top: 0;
+    right: 2%;
+}
+.section-mv .obj02 {
+    top: 90%;
+    left: 20%;
+}
+
 /*ーーーーーーーー pagetop ーーーーーーーー*/
 .page-top a i::before {
     position: absolute;
@@ -796,7 +826,7 @@ p {
     height: 100%;
 }
 .page-top:hover {
-    color: var(--green);
+    filter: invert(5%);
 }
 .page-top {
     height: 50px;

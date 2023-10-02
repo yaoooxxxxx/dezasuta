@@ -11,6 +11,17 @@
     font-weight: bold;
 }
 
+/*ーーーーーーーー 背景のオブジェクト ーーーーーーーー*/
+form .obj01 {
+    top: -10%;
+    right: 0;
+}
+form .obj02 {
+    bottom: -30%;
+    left: 10%;
+    top: inherit;
+}
+
 /*ーーーーーーーー header ーーーーーーーー*/
 .header-inner_listitem--contact:hover {
     border-bottom: none;
@@ -61,7 +72,11 @@
 #contact .mv-img {
     width: 80vw;
 }
-
+@media screen and (max-width: 680px) {
+    #contact .mv-img {
+        width: 92vw;
+    }
+}
 /*ーーーーーーーー お問い合わせの説明 ーーーーーーーー*/
 .contact-head {
     width: 80%;
@@ -118,12 +133,17 @@
 }
 
 /*ーーーーーーーー btn ーーーーーーーー*/
-#contact .btn a,
+#contact .btn button,
 #thanks .btn a {
     font-size: clamp(14px, 3rem, 16px);
 }
 .btn-hover {
     border: 1px solid #201213;
+}
+.btn button {
+    position: relative;
+    display: inline-block;
+    padding: 1.2em 5.3em;
 }
 .btn a {
     position: relative;
@@ -163,6 +183,11 @@ i::before {
     font-size: clamp(28px, 6rem, 36px) !important;
     font-weight: bold !important;
 }
+/*ーーーーーーーー 背景のオブジェクト ーーーーーーーー*/
+.thanks-head .obj01 {
+    top: 110%;
+    right: 0;
+}
 
 /*ーーーーーーーー フォント ーーーーーーーー*/
 .thanks-head .inner span {
@@ -178,6 +203,11 @@ i::before {
 /*ーーーーーーーー メインビジュアルの幅 ーーーーーーーー*/
 #thanks .mv-img {
     width: 80vw;
+}
+@media screen and (max-width: 680px) {
+    #thanks .mv-img {
+        width: 92vw;
+    }
 }
 
 /* メインビジュアルと見出しの間の余白 */

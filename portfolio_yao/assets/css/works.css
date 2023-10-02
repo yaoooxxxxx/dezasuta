@@ -64,7 +64,7 @@
 
 /*ーーーーーーーー Works ーーーーーーーー*/
 .works-inner_item:hover {
-    opacity: 0.7;
+    filter: invert(25%);
 }
 @media screen and (max-width: 580px) {
     .works {
@@ -127,7 +127,12 @@
         margin-bottom: 150px;
     }
     .about-inner {
-        padding: 55px 65px;
+        padding: 20rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .about-inner_txt .btn .btn-hover a {
+        padding: 1.4em 2.3em 1em;
     }
 }
 
@@ -163,6 +168,11 @@ i::before {
 /* メインビジュアルの幅 */
 #work .mv-img {
     width: 70vw;
+}
+@media screen and (max-width: 680px) {
+    #work .mv-img {
+        width: 92vw;
+    }
 }
 /* メインコンテンツの横幅 */
 .work-main {
